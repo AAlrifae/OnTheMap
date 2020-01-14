@@ -1,0 +1,73 @@
+//
+//  AddPinViewController.swift
+//  OnTheMap
+//
+//  Created by Abdulrahman Alrifae on 1/12/20.
+//  Copyright © 2020 Udacity. All rights reserved.
+//
+
+import UIKit
+import CoreLocation
+
+class AddPinViewController: UIViewController {
+
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var mediaTextField: UITextField!
+    @IBOutlet weak var geocodingIndicator: UIActivityIndicatorView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        locationTextField.delegate = self
+        mediaTextField.delegate = self
+        locationTextField.text = ""
+        mediaTextField.text = ""
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func findLocation(_ sender: Any) {
+        guard let location = locationTextField.text,
+            let media = mediaTextField.text,
+            locationTextField.text != "",
+            mediaTextField.text != ""
+            else {
+                showAddPinFailure(message: "Fill the text fields!")
+                return
+            }
+        geocodingIndicator.startAnimating()
+        getCoordinateFrom(address: locationTextField.text ?? "") { (coordinate, error) in
+            guard let coordinate = coordinate else {
+                DispatchQueue.main.async {
+                    self.geocodingIndicator.stopAnimating()
+                    self.showAddPinFailure(message: "Enter a correct location!")
+                }
+                return
+            }
+            DispatchQueue.main.async {
+                OnTheMapAPI.UserData.latitude = coordinate.latitude
+                OnTheMapAPI.UserData.longitude = coordinate.longitude
+                OnTheMapAPI.UserData.mapString = location
+                OnTheMapAPI.UserData.mediaURL = media
+                print(media+location)
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "confirmPin") as! ConfirmPinViewController
+                self.geocodingIndicator.stopAnimating()
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func getCoordinateFrom(address: String, completion: @escaping(_ coordinate: CLLocationCoordinate2D?, _ error: Error?) -> () ) {
+        CLGeocoder().geocodeAddressString(address) { completion($0?.first?.location?.coordinate, $1)}
+    }
+    
+    func showAddPinFailure(message: String) {
+        let alertVC = UIAlertController(title: "Add Pin Failed", message: message, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        show(alertVC, sender: nil)
+    }
+
+    
+}
+

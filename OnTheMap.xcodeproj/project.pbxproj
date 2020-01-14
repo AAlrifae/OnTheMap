@@ -14,6 +14,18 @@
 		8A948C4D23CBA84900D42152 /* OnTheMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C4B23CBA84900D42152 /* OnTheMap.xcdatamodeld */; };
 		8A948C4F23CBA84B00D42152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A948C4E23CBA84B00D42152 /* Assets.xcassets */; };
 		8A948C5223CBA84B00D42152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A948C5023CBA84B00D42152 /* LaunchScreen.storyboard */; };
+		8A948C5A23CBA95400D42152 /* OnTheMapApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C5923CBA95400D42152 /* OnTheMapApi.swift */; };
+		8A948C5C23CBA9A700D42152 /* AddPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C5B23CBA9A700D42152 /* AddPinViewController.swift */; };
+		8A948C5E23CBA9D100D42152 /* ConfirmPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C5D23CBA9D100D42152 /* ConfirmPinViewController.swift */; };
+		8A948C6023CBAA0500D42152 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C5F23CBAA0500D42152 /* LoginViewController.swift */; };
+		8A948C6223CBAA2F00D42152 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C6123CBAA2F00D42152 /* MapViewController.swift */; };
+		8A948C6423CBAA5800D42152 /* PinsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C6323CBAA5800D42152 /* PinsTableViewController.swift */; };
+		8A948C6623CBAA8400D42152 /* TextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C6523CBAA8400D42152 /* TextFieldExtensions.swift */; };
+		8A948C6823CBAAC500D42152 /* AddedStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C6723CBAAC500D42152 /* AddedStudent.swift */; };
+		8A948C6A23CBAAE200D42152 /* PostingStudentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C6923CBAAE200D42152 /* PostingStudentResponse.swift */; };
+		8A948C6C23CBAAFD00D42152 /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C6B23CBAAFD00D42152 /* SessionResponse.swift */; };
+		8A948C6E23CBAB1E00D42152 /* StudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C6D23CBAB1E00D42152 /* StudentLocation.swift */; };
+		8A948C7023CBAB3A00D42152 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948C6F23CBAB3A00D42152 /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,18 @@
 		8A948C4E23CBA84B00D42152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A948C5123CBA84B00D42152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A948C5323CBA84B00D42152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A948C5923CBA95400D42152 /* OnTheMapApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTheMapApi.swift; sourceTree = "<group>"; };
+		8A948C5B23CBA9A700D42152 /* AddPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPinViewController.swift; sourceTree = "<group>"; };
+		8A948C5D23CBA9D100D42152 /* ConfirmPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinViewController.swift; sourceTree = "<group>"; };
+		8A948C5F23CBAA0500D42152 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A948C6123CBAA2F00D42152 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8A948C6323CBAA5800D42152 /* PinsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsTableViewController.swift; sourceTree = "<group>"; };
+		8A948C6523CBAA8400D42152 /* TextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtensions.swift; sourceTree = "<group>"; };
+		8A948C6723CBAAC500D42152 /* AddedStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedStudent.swift; sourceTree = "<group>"; };
+		8A948C6923CBAAE200D42152 /* PostingStudentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingStudentResponse.swift; sourceTree = "<group>"; };
+		8A948C6B23CBAAFD00D42152 /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
+		8A948C6D23CBAB1E00D42152 /* StudentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocation.swift; sourceTree = "<group>"; };
+		8A948C6F23CBAB3A00D42152 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +90,18 @@
 				8A948C5023CBA84B00D42152 /* LaunchScreen.storyboard */,
 				8A948C5323CBA84B00D42152 /* Info.plist */,
 				8A948C4B23CBA84900D42152 /* OnTheMap.xcdatamodeld */,
+				8A948C5923CBA95400D42152 /* OnTheMapApi.swift */,
+				8A948C5B23CBA9A700D42152 /* AddPinViewController.swift */,
+				8A948C5D23CBA9D100D42152 /* ConfirmPinViewController.swift */,
+				8A948C5F23CBAA0500D42152 /* LoginViewController.swift */,
+				8A948C6123CBAA2F00D42152 /* MapViewController.swift */,
+				8A948C6323CBAA5800D42152 /* PinsTableViewController.swift */,
+				8A948C6523CBAA8400D42152 /* TextFieldExtensions.swift */,
+				8A948C6723CBAAC500D42152 /* AddedStudent.swift */,
+				8A948C6923CBAAE200D42152 /* PostingStudentResponse.swift */,
+				8A948C6B23CBAAFD00D42152 /* SessionResponse.swift */,
+				8A948C6D23CBAB1E00D42152 /* StudentLocation.swift */,
+				8A948C6F23CBAB3A00D42152 /* UserInfo.swift */,
 			);
 			path = OnTheMap;
 			sourceTree = "<group>";
@@ -143,8 +179,20 @@
 			files = (
 				8A948C4723CBA84900D42152 /* ViewController.swift in Sources */,
 				8A948C4D23CBA84900D42152 /* OnTheMap.xcdatamodeld in Sources */,
+				8A948C6823CBAAC500D42152 /* AddedStudent.swift in Sources */,
+				8A948C6E23CBAB1E00D42152 /* StudentLocation.swift in Sources */,
+				8A948C7023CBAB3A00D42152 /* UserInfo.swift in Sources */,
+				8A948C6C23CBAAFD00D42152 /* SessionResponse.swift in Sources */,
+				8A948C5A23CBA95400D42152 /* OnTheMapApi.swift in Sources */,
+				8A948C6623CBAA8400D42152 /* TextFieldExtensions.swift in Sources */,
 				8A948C4323CBA84900D42152 /* AppDelegate.swift in Sources */,
+				8A948C6223CBAA2F00D42152 /* MapViewController.swift in Sources */,
+				8A948C6023CBAA0500D42152 /* LoginViewController.swift in Sources */,
+				8A948C6A23CBAAE200D42152 /* PostingStudentResponse.swift in Sources */,
+				8A948C5C23CBA9A700D42152 /* AddPinViewController.swift in Sources */,
 				8A948C4523CBA84900D42152 /* SceneDelegate.swift in Sources */,
+				8A948C5E23CBA9D100D42152 /* ConfirmPinViewController.swift in Sources */,
+				8A948C6423CBAA5800D42152 /* PinsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
